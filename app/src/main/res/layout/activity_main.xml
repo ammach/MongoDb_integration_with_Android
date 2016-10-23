@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ammach.mongodb.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manipulation des Comptes"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/editIdCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Identifiant"/>
+    <EditText
+        android:id="@+id/editSoldeCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Solde"
+        android:inputType="number"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/createCompte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Créer un Compte"/>
+        <Button
+            android:id="@+id/listeComptes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Liste des Comptes"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Effectuer une Opération"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinnerCompte"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spinnerTypeOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editMontantOp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Montant Opération"
+        android:inputType="number"/>
+
+
+        <Button
+            android:id="@+id/createOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Créer Opération"/>
+
+
+</LinearLayout>

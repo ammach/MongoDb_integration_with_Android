@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ammach.mongodb.OperationsActivity">
+
+    <ListView
+        android:id="@+id/listeOp"
+        android:layout_width="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/black"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/listeOp"
+        android:background="@android:color/black"/>
+    <TextView
+        android:id="@+id/txtOps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aucune opération pour ce compte"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+</RelativeLayout>
